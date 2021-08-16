@@ -1,11 +1,12 @@
 """app.locations.csbs.py"""
-from . import Location
+from . import LocationImplementor
 
 
-class CSBSLocation(Location):
+class CSBSLocation(LocationImplementor):
     """
     A CSBS (county) location.
     """
+    #This would be a concrete implementor
 
     # pylint: disable=too-many-arguments,redefined-builtin
     def __init__(self, id, state, county, coordinates, last_updated, confirmed, deaths):

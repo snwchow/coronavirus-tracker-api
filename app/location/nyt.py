@@ -1,11 +1,13 @@
 """app.locations.nyt.py"""
 from . import TimelinedLocation
+from . import TimelinedLocationImplementor
 
 
-class NYTLocation(TimelinedLocation):
+class NYTLocation(TimelinedLocationImplementor):
     """
     A NYT (county) Timelinedlocation.
     """
+    #This would be an another concrete implementor
 
     # pylint: disable=too-many-arguments,redefined-builtin
     def __init__(self, id, state, county, coordinates, last_updated, timelines):
